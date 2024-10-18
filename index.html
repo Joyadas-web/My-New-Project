@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>traval project</title>
+    <link rel="stylesheet" href="./style.css">
+    
+    <script src="https://code jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.mon.js"></script>
+
+</head>
+<body>
+   <div class="container">
+    <h1>Travel Top Destination
+    of The World</h1>
+   </div> 
+   <script>
+    $(document).ready(function(){
+    $('.container').ripples({
+        resolution: 256,
+        perturbance: 0.03,
+        dropRedius: 20,
+    });
+});
+   </script>
+</body>
+</html>
