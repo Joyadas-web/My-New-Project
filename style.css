@@ -7,7 +7,8 @@
 .container{
   width: 100%;
   min-height: 100vh;
-  background:url(./image/home\ .jpg) ;
+  background:url(./image/home.jpg) ;
+ 
   background-size: cover;
   background-position: center;
   display: flex;
@@ -15,8 +16,45 @@
   align-items: center;
 
 }
-.container h1{
-  font-size: 6em;
-  color: aliceblue;
-  text-transform: uppercase;
+.first {
+    position: relative;
+    font-family: roboto;
+    font-style: italic;
+    /* padding: 5px; */
+}
+
+
+
+
+
+.second {
+    position: absolute;
+    top: 40px;
+    width: 250px;
+    /* background: #5199ad; */
+    display: none;
+}
+
+.first:hover .second {
+    display: block;
+   
+}
+.list {
+  position: relative;
+  font-family: roboto;
+  font-style: italic;
+
+}
+
+.list-line {
+  position: absolute;
+  top: 40px;
+  width: 250px;
+  background: #f5f7f8;
+  display: none;
+  margin-left: 150px;
+}
+
+.list:hover .list-line {
+  display: block;
 }

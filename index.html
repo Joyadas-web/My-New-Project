@@ -1,29 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>traval project</title>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js">
+
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./libray/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./libray/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="./style.css">
-    
-    <script src="https://code jquery.com/jquery-3.4.1.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.mon.js"></script>
-
 </head>
+
 <body>
-   <div class="container">
-    <h1>Travel Top Destination
-    of The World</h1>
-   </div> 
-   <script>
-    $(document).ready(function(){
-    $('.container').ripples({
-        resolution: 256,
-        perturbance: 0.03,
-        dropRedius: 20,
-    });
-});
-   </script>
+    <main>
+        <section class="container flex-col">
+            <header class="flex justify-between mt-[-100px] h-[100px] gap-[100px] ">
+                <div>
+                    <img src="./image/logo.png" class="h-[40px]" alt="">
+                </div>
+                <div>
+                    <nav class="flex justify-start">
+                        <ul class="md:flex justify-end hidden gap-[34px]">
+                            <li class="first"><a href="#" class=" w-[50px] font-serif text-[30px]
+                                 text-[#5199ad] ">
+                                    Home</a>
+                                <ul class="second  text-[25px] justify-center bg-slate-50 text-[#000]">
+                                    <li><a href="#" class=" p-[10px]   hover:bg-[#5199ad] ">Homepage
+                                            Default</a></li>
+                                    <li><a href="# " class=" p-[10px]  hover:bg-[#5199ad]">Homepage 1</a></li>
+                                    <li><a href="#" class="p-[10px]   hover:bg-[#5199ad]">Homepage 2</a></li>
+                                    <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Homepage 3</a></li>
+                                    <li><a href="#" class="p-[10px]  hover:bg-[#5199ad]">Homepage 4</a></li>
+                                    <li><a href="#" class="p-[10px]  hover:bg-[#5199ad]">Homepage 5</a></li>
+                                    <li class="list"><a href="#"
+                                            class=" p-[10px]  hover:bg-[#5199ad]">Flights</a>
+                                        <ul class="list-line text-[25px] justify-center bg-slate-50">
+                                            <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Flight
+                                                    homepage</a></li>
+                                            <li><a href="#" class="p-[10px]  hover:bg-[#5199ad]">Flight
+                                                    grid</a></li>
+                                            <li><a href="#" class="p-[10px]  hover:bg-[#5199ad]">Flight
+                                                    list</a></li>
+                                            <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Flight
+                                                    Detail</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list"><a href="#"
+                                            class=" p-[10px]  hover:bg-[#5199ad]">Cars</a>
+                                        <ul class="list-line text-[25px] justify-center bg-slate-50">
+                                            <li><a href="#" class=" p-[10px] hover:bg-[#5199ad]">Cars
+                                                    homepage</a></li>
+                                            <li><a href="#" class="p-[10px]  hover:bg-[#5199ad]">Cars grid</a>
+                                            </li>
+                                            <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Cars
+                                                    list</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list"><a href="#"
+                                            class=" p-[10px] gap-[60px] hover:bg-[#5199ad]">Cruise</a>
+                                        <ul class="list-line text-[25px] justify-center bg-slate-50">
+                                            <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Cruise
+                                                    homepage</a></li>
+                                            <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Cruise
+                                                    grid</a></li>
+                                            <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Cruise
+                                                    list</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="w-[74px] font-serif text-[30px] text-[#ffff]">
+                                    About us</a>
+
+                            </li>
+                            <li class="first"><a href="#" class="w-[62px] font-serif text-[30px]
+                                 text-[#5199ad] ">
+                                    Destination</a>
+                                <ul class="second bg-slate-50 text-[#000] text-[25px] justify-center h-auto">
+                                    <li><a href="#" class="p-[10px]  hover:bg-[#5199ad]">Destination list</a>
+                                    </li>
+                                    <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Destination
+                                            detail</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="first"><a href="#" class="w-[48px] font-serif text-[30px]  justify-center
+                                 text-[#ffff]">Tours
+
+                                </a>
+                                <ul class="second bg-[#f1f2f3] text-[#000] text-[25px] justify-center ">
+                                    <li class="list"><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Tour
+                                            list</a>
+                                        <ul class="list-line text-[20px] justify-center">
+                                            <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Tour list
+                                                    leftsideber</a></li>
+                                            <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Tour list
+                                                    rightsideber</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="list "><a href="#" class=" p-[10px] gap-[60px] hover:bg-[#5199ad]">Tour
+                                            grid</a>
+                                        <ul class="list-line text-[20px] justify-center h-[300px]">
+                                            <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Tour grid
+                                                    leftsideber</a></li>
+                                            <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Tour grid
+                                                    rightsideber</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="list"><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Tour
+                                            single</a>
+                                        <ul class="list-line text-[20px] justify-center">
+                                            <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Tour single
+                                                    leftsideber</a>
+                                            </li>
+                                            <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Tour single
+                                                    Rightsideber</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="first"><a href="#" class="w-[48px] font-serif text-[30px] text-[#5199ad] ">Pages
+
+                                </a>
+                                <ul class="second text-[25px] justify-center bg-slate-50 text-[#000]">
+                                    <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Our Guide</a></li>
+                                    <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Booking</a></li>
+                                    <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Confrimation</a>
+                                    </li>
+                                    <li class="list"><a href="#"
+                                            class=" p-[30px] gap-[60px] hover:bg-[#5199ad]">Scrivces</a>
+                                        <ul class="list-line text-[25px] justify-center">
+                                            <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Scrivces
+                                                    lists</a></li>
+                                            <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Scrivces
+                                                    detail</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list"><a href="#"
+                                            class=" p-[30px] gap-[60px] hover:bg-[#5199ad]">Gallery</a>
+                                        <ul class="list-line text-[25px] justify-center">
+                                            <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Gallery</a>
+                                            </li>
+                                            <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Gallery
+                                                    Masonry</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list"><a href="#"
+                                            class=" p-[30px] gap-[60px] hover:bg-[#5199ad]">Error</a>
+                                        <ul class="list-line text-[25px] justify-center">
+                                            <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Error page
+                                                    1</a></li>
+                                            <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Error page
+                                                    2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Coming Soon</a></li>
+                                    <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Faq</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="first"><a href="#" class="w-[48px] font-serif text-[30px] text-[#fff]">Blog
+
+                                </a>
+                                <ul class="second text-[25px] justify-center bg-[#f5f7f8] text-[#000]">
+                                    <li class="list"><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Tour
+                                            list</a>
+                                        <ul class="list-line text-[25px] justify-center">
+                                            <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Tour list
+                                                    1</a></li>
+                                            <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Tour list
+                                                    2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list"><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Tour
+                                            grid</a>
+                                        <ul class="list-line text-[25px] justify-center">
+                                            <li><a href="#" class="p-[10px]  hover:bg-[#5199ad]">Tour grid
+                                                    1</a></li>
+                                            <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Tour grid
+                                                    2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list"><a href="#" class=" p-[10px] 
+                                         hover:bg-[#5199ad]">Tour single</a>
+                                        <ul class="list-line text-[25px] justify-center">
+                                            <li><a href="#" class=" p-[10px]  hover:bg-[#5199ad]">Tour single
+                                                    1</a></li>
+                                            <li><a href="#" class=" p-[10px] 
+                                                 hover:bg-[#5199ad]">Tour single
+                                                    2</a></li>
+                                        </ul>
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="w-[48px] font-serif text-[30px] text-[#5199ad]">
+                                    Contacts</a>
+
+
+                        </ul>
+
+                    </nav>
+                </div>
+                <div> <button class="bg-[#5199ad] text-[#fff] rounded-full ... w-[136px] font-serif
+                                                 h-[44px]  ">
+                        Book Now
+
+                    </button></div>
+
+            </header>
+
+
+            <div class=" flex-col ">
+
+                <div>
+                    <h2 class=" flex justify-center mx-[auto] text-[#ffffff] text-[45px] mt-[100px]  font-[bold]">Let's
+                        Travel The
+                        World With Us
+                    </h2>
+                </div>
+                <div class="text-center">
+                    <h1 class="  text-[110px]  leading-[1.33em] bottom-[75px] text-[#000]
+       font-[bold]
+        
+        ">Travel Top Destination
+                        <br>
+                        of The World
+                    </h1>
+                </div>
+            </div>
+        </section>
+        <!-- second part -->
+         <section class="relative mt-[-40px] flex justify-center mx-[auto]" >
+        
+            <div class=" md:grid-cols-3 flex justify-center gap-[30px] grid-cols-1 absolute 
+                         flex-wrap md:flex-nowrap">
+                <div class="bg-[#fff]  rounded-lg  w-[320px] md:w-[1200px] h-[140px]">
+                    <div class="flex w-[200px] bg-[#5199ad] h-[140px] rounded-l-lg  ">
+                        <div><i class="fa fa-map-marker text-[60px] text-[#fff] mt-[10px] p-[25px]"
+                                aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-[20px] mt-[35px] font-bold text-[#fff]">Find Your
+                                <br>
+                                Holidays
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div class="grid-cols-4 flex justify-center gap-[30px] mt-[-90px]">
+                        <div class="border border-[#090909] rounded-lg 
+                        w-[160px] h-[50px]">
+                            <input class="password text-[#000] p-[10px]" type="Destination" placeholder="Destinaton"
+                                required>
+
+                        </div>
+                        <div class="border border-[#090909] rounded-lg 
+                                                w-[160px] h-[50px]">
+                            <input class="password text-[#000] p-[10px]" type="date" placeholder="pick a date" required>
+
+                        </div>
+                        <div class="border border-[#090909] rounded-lg 
+                                                w-[160px] h-[50px]">
+                            <input class="password text-[#000] p-[10px]" type="Traval" placeholder="Traval type"
+                                required>
+
+                        </div>
+                        <div class="border border-[#090909] rounded-lg 
+                                                w-[200px] h-[50px]">
+                            <input class="password text-[#000] p-[10px]" type="duration" placeholder="Tour Duration"
+                                required>
+
+                        </div>
+
+                    </div>
+                    <div class="flex justify-end mt-[-50px]">
+                       
+
+                      <div> <button class="rounded-lg ... bg-[#5199ad] w-[160px] h-[50px]  text-[#fff]
+                            mr-[40px]"><i class="fa fa-search  text-[#fff]" aria-hidden="true"></i>
+                            Search Now</button></div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+         </section>
+
+        <script>
+            $(document).ready(function () {
+                $('.container').ripples({
+                    resolution: 256,
+                    perturbance: 0.03,
+                    dropRedius: 20,
+                });
+            });
+        </script>
 </body>
+
 </html>
